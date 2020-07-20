@@ -1,0 +1,20 @@
+  const messageType =
+    props.messageType === "sent" ? (
+      <SentMessage message={props.message} />
+    ) : (
+      <ReceivedMessage message={props.message} />
+    );
+  console.log("chat message props", props);
+  return (
+    <div className="chat-message">
+      <img className="user-avatar" src={props.message.user.avatar} />
+      <div className="chat-box">
+        {/* <span className="user-name">{props.message.user.username}</span>
+        <span className="chat-body">{props.message.body}</span> */}
+        {messageType}
+      </div>
+    </div>
+  );
+};
+
+export default ChatMessage;
