@@ -12,16 +12,16 @@ const SentMessage = ({ body }) => {
     <div className="chat-message sent">
       <div className="chat-text  ">
         <span className="chat-body sent-text">{body}</span>
+        <img className="sent-tips" src="/assets/tip-sent.svg" />
       </div>
-      <img className="received-tips" src="/assets/tip-sent.svg" />
     </div>
   );
 };
 const ReceivedMessage = ({ user, body }) => {
   return (
-    <div className="chat-message ">
+    <div className="chat-message received ">
       <img className="user-avatar" src={user.avatar} />
-      <div className="chat-text received">
+      <div className="chat-text ">
         <span className="user-name">{user.username}</span>
         <span className="chat-body received-text">{body}</span>
         <img className="received-tips" src="/assets/tip-received.svg" />

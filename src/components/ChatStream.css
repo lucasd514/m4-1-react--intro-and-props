@@ -32,6 +32,15 @@
   margin-top: 5px;
 }
 
+.received-tips {
+  margin-bottom: 10px;
+  z-index: 10;
+  position: relative;
+}
+
+.sent-tips {
+  margin-left: 98%;
+}
 .received-text {
   background-color: lightgray;
   border-radius: 10%;
@@ -42,14 +51,14 @@
 }
 .sent-text {
   margin-left: 20%;
+  background-color: rgb(34, 146, 216);
+  border: 3px rgb(34, 146, 216);
+  border-radius: 5px;
 }
 
 .sent {
   width: 300px;
   margin-left: 100px;
-  border-radius: 5px;
-  background-color: lightskyblue;
-  border: 3px lightskyblue;
 }
 
 .user-avatar {
