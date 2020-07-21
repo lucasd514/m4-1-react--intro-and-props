@@ -9,20 +9,20 @@ const ChatMessage = ({ user, body, messageType }) => {
 };
 const SentMessage = ({ body }) => {
   return (
-    <div className="chat-message">
-      <div className="chat-text sent-text">
-        <span className="chat-body sent">{body}</span>
+    <div className="chat-message sent">
+      <div className="chat-text  ">
+        <span className="chat-body sent-text">{body}</span>
       </div>
     </div>
   );
 };
 const ReceivedMessage = ({ user, body }) => {
   return (
-    <div className="chat-message">
+    <div className="chat-message ">
       <img className="user-avatar" src={user.avatar} />
-      <div className="chat-text">
+      <div className="chat-text received">
         <span className="user-name">{user.username}</span>
-        <span className="chat-body received">{body}</span>
+        <span className="chat-body received-text">{body}</span>
       </div>
     </div>
   );

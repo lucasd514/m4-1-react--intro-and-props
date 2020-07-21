@@ -9,9 +9,16 @@
 */
 .chat-message {
   display: flex;
-  margin: 50px 25px;
+  margin: 25px;
+}
+.chat-message.recieved {
+  border: darkgoldenrod 3px solid;
 }
 
+.chat-text {
+  display: inline;
+  text-justify: auto;
+}
 .chat-box {
   display: flex;
   flex-direction: column;
@@ -21,10 +28,30 @@
   flex-direction: column;
   align-items: center;
   height: 50px;
-  width: 400px;
+
   margin-top: 5px;
-  background-color: lightgrey;
 }
+
+.received-text {
+  background-color: lightgray;
+  border-radius: 10%;
+  width: 300px;
+}
+.user-avatar {
+  margin-right: 15px;
+}
+.sent-text {
+  margin-left: 20%;
+}
+
+.sent {
+  width: 300px;
+  margin-left: 100px;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  border: 3px lightskyblue;
+}
+
 .user-avatar {
   height: 100px;
   width: 100px;
